@@ -3,27 +3,30 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "INFO 5940"
+name = "INFO-5940"
 version = "1.0.0"
-description = ""
+description = "RAG Chatbot"
 authors = ["Ayham Boucher <private>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-aioboto3 = "^12"
-fsspec = "*"
+
+pymupdf = "^1.23.0"  
+
 openai = "^1.14"
-pandas = "^2"
-poetry = "^1.7"
-pydantic = "^2"
-s3fs = "*"
-streamlit = "^1.0"
 tiktoken = "^0.7.0"
-langchain-community = "^0.2.15"
 langchain = "^0.2.15"
-langchain_core = "^0.2.15"
 langchain-openai = "^0.1.23"
-pydub = "^0.25.1"
+langchain-community = "^0.2.15"
+langchain_core = "^0.2.15"
+
+chromadb = "^0.4.22"
+faiss-cpu = "^1.7.4"
+
+streamlit = "^1.0"
+
+pandas = "^2"
+pydantic = "^2"
 
 [tool.poetry.group.dev.dependencies]
 cfn_flip = "*"
