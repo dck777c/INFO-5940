@@ -25,6 +25,7 @@ COPY ./pyproject.toml ./poetry.lock* ./
 
 RUN poetry install --no-interaction --no-ansi --all-extras
 
+# Installed packages that are not conflicting
 RUN pip install --no-cache PyMuPDF==1.24.11 chromadb==0.5.13 streamlit
 
 COPY . .

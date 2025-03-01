@@ -11,6 +11,7 @@ authors = ["Ayham Boucher <private>"]
 [tool.poetry.dependencies]
 python = "^3.11"
 
+# Making sure versions are up to date and matches within dockerfile
 pymupdf = "1.24.11"  
 chromadb = "0.5.13" 
 streamlit = "^1.20" 
