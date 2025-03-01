@@ -1,11 +1,9 @@
 version: '3.8'
 services:
-  
   devcontainer:
     container_name: info-5940-devcontainer
     build:
       dockerfile: Dockerfile
-      target: devcontainer
     environment:
       OPENAI_API_KEY: sk-xIvD5Mw4sc1_owNpoJcO8g
       OPENAI_BASE_URL: https://api.ai.it.cornell.edu/

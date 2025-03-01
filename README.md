@@ -62,6 +62,9 @@ OPENAI_BASE_URL=https://api.ai.it.cornell.edu/
 docker-compose up --build
 ```
 
+Open VS:
+Run: Command+Shift+P - Remote-Containers: Rebuild and Reopen in Container
+
 This command will build and start the container. The first run may take a few minutes.
 
 #### 4. Access the Chatbot
@@ -106,6 +109,9 @@ echo "OPENAI_BASE_URL=https://api.ai.it.cornell.edu/" >> .env
 docker-compose up --build
 ```
 
+Open VS:
+Run: Command+Shift+P - Remote-Containers: Rebuild and Reopen in Container
+
 Run:
 ```sh
 streamlit run chat_with_pdf.py
@@ -138,6 +144,9 @@ docker exec -it info-5940-devcontainer /bin/bash
 
 ### Manually Running Streamlit
 
+Open VS:
+Run: Command+Shift+P - Remote-Containers: Rebuild and Reopen in Container
+
 ```sh
 streamlit run chat_with_pdf.py
 ```
@@ -162,9 +171,7 @@ OPENAI_BASE_URL=https://api.ai.it.cornell.edu/
    - Used `Poetry` for dependency management and disabled virtual environment creation within the container.
 
 2. **Docker-Compose Changes**
-
-   - Specified pymupdf = "^1.23.0"  
-   - Used chromadb = "^0.4.22"
+   - Specified PyMuPDF==1.24.11 chromadb==0.5.13
 
 3. **Application Adjustments**
 
